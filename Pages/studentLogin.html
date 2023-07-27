@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background: linear-gradient(#00000080, #000000c7), url('../images/loginImage.jpg') ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+        main{
+            width: 30rem;
+            height: 25rem;
+            background-color: #fff;
+            padding: 3rem;
+            box-sizing: border-box;
+        }
+
+        .inputStyle{
+            border: none;
+            border-bottom: 1px solid #000;
+            width: 100%;
+            height: 2.5rem;
+            outline: none;
+            color: #000;
+            font-size: 1.1rem;
+            box-sizing: border-box;
+            margin-bottom: 2rem;
+
+        }
+        .inputStyle::placeholder{
+            color: #0000007b;
+        }
+        .inputStyle:focus{
+            background-color: #00000036;
+        }
+        .SignInButton{
+            width: 10rem;
+            height: 3rem;
+            font-size: large;
+            border: none;
+            cursor: pointer;
+            color: #000;
+            border: 2px solid #000000;
+        }
+        .SignInButton:active{
+            background-color: #000;
+            color: #fff;
+
+        }
+    </style>
+</head>
+<body>
+         <main id='studentLogin'>
+         <h1>Student Login</h1>
+         <form action='../Database/idChecker.php' method='post'>
+          <input type='email' name="stu_email" placeholder='Student Id' class='inputStyle'>
+          <input type='password' name="stu_password" placeholder='Password' class='inputStyle'>
+          <button type='submit' name='studentLogin' class='SignInButton'>Submit</button>
+         </form>    
+         </main>    
+</body>
+</html>

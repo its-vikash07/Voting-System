@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online College Level Voting System</title>
+    <style>
+        body{
+            background: linear-gradient(#00000080, #000000c7), url('./images/acropolis.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            font-size: 12rem;
+            color: #fff;
+            font-family: sans-serif;
+            margin: 0%;
+        }
+        .SignInButton{
+            width: 10rem;
+            height: 3rem;
+            font-size: large;
+            background-color: #0D47A1;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+        .result{
+            background-color: #0d971e;
+            margin-top: 3rem;
+        }
+        .result:hover{
+            background-color: transparent;
+            border: 2px solid #0d971e;
+        }
+        .SignInButton:hover{
+            background-color: transparent;
+            border: 2px solid #0D47A1;
+        }
+        .buttonContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 25rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <section class="buttonContainer">
+        <a href="./Pages/adminLogin.html"><button type="submit" name='adminLogin' class="SignInButton">Admin Login</button></a>
+        <a href="./Pages/studentLogin.html"><button type="submit" name='studentLogin' class="SignInButton">Student Login</button></a>    
+    </section>
+    <a href="./Database/electionResult.php"><button class="SignInButton result">Check Result</button></a>
+</body>
+</html>
